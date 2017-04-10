@@ -1,16 +1,30 @@
 {
-  "name": "reactspa",
+  "name": "webpack-example",
   "version": "1.0.0",
-  "description": "HZ",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "react": "^15.5.3",
-    "react-dom": "^15.5.3"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --watch --colors",
+    "serve": "webpack-dev-server --progress --colors"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "webpack",
+    "example",
+    "tutorial"
+  ],
+  "author": "HZ)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.13.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.2"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
 }
